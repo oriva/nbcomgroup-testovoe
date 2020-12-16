@@ -1,0 +1,21 @@
+main
+	.container
+		.row.justify-content-center
+			.configurator
+				.configurator__header
+					include blocks/tab
+				#js-generate-service.configurator__body
+					.accordion.nst-component.nst-is-collapsed
+						.accordion__name.nst-toggle
+							| Цвет
+						.accordion__list.nst-content
+							div
+								.checkbox.accordion__item
+									input#accordion-first(type="checkbox", checked="checked")
+									label(for="accordion-first")
+										| бла-бла
+				.configurator__footer
+					.configurator__total-block
+						.text-with-line
+							span
+								| Тип устройства

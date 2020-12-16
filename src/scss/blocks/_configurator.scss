@@ -1,0 +1,25 @@
+.configurator {
+	flex: 0 0 75%;
+	margin-top: 80px;
+	border: 1px solid #333;
+	width: 75%;
+
+	&__header,
+	&__footer {
+		padding: 15px 20px;
+		background-color: #ccc;
+	}
+
+	&__body {
+		border-top: 1px solid #333;
+		padding: 40px 20px;
+	}
+
+	> * {
+		border-top: 1px solid #333;
+
+		&:first-child {
+			border-top: none;
+		}
+	}
+}

@@ -1,0 +1,5 @@
+.tab
+	each val, key in {'type': {'name': 'Тип устройства', 'isActive': false}, 'specification': {'name': 'Характеристики', 'isActive': true}, 'options': {'name': 'Комплектация', 'isActive': false}}
+		.tab__item(data-code=key, class=val.isActive?'tab__item_active':'')
+			= val.name
+

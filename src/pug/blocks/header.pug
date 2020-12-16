@@ -1,0 +1,16 @@
+header.header
+	.container
+		.row.align-items-center.justify-content-btw
+			.col-auto
+				a.header__link
+					img(src="/images/icons/logo.svg" alt="Logo")
+
+			.col
+				ul.nav
+					each val in {0: {'name': 'Главная', 'link': '/'}, 1: {'name': 'Каталог', 'link': '/catalog/'}, 2: {'name': 'Контакты', 'link': '/contacts/'}}
+						li.nav__list
+							a(href=val.link)= val.name
+			.col-auto
+				.header__num-block
+					a(href="+7999999999")
+						| +7 (999) 99-99-99

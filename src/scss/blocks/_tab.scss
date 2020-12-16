@@ -1,0 +1,49 @@
+.tab {
+	counter-reset: tab;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item {
+		position: relative;
+		padding-right: 30px;
+		padding-left: 30px;
+		color: #0034e2;
+
+		&::before {
+			counter-increment: tab;
+			content: counter(tab);
+			position: absolute;
+			left: 0;
+			top: 50%;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			font-size: 14px;
+			line-height: 18px;
+			text-align: center;
+			color: #fff;
+			background-color: #0034e2;
+			transform: translateY(-50%);
+		}
+
+		&::after {
+			content: "|";
+			position: absolute;
+			right: 15px;
+		}
+
+		&_active {
+			color: #333;
+
+			&::before {
+				background-color: #333;
+			}
+		}
+
+		&:last-child {
+			&::after {
+				content: "";
+			}
+		}
+	}
+}

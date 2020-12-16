@@ -1,0 +1,63 @@
+@import "../variables";
+
+.accordion {
+	border-bottom: 1px solid #333;
+
+	&__name {
+		position: relative;
+		padding: 15px;
+		font-weight: 600;
+		color: #0034e2;
+		transition: $duration-normal;
+		cursor: pointer;
+
+		&::before {
+			content: "+";
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			border: 1px solid #0034e2;
+			border-radius: 50%;
+			width: 20px;
+			height: 20px;
+			font-weight: 400;
+			text-align: center;
+			color: #0034e2;
+			transform: translateY(-50%);
+			transition: $duration-normal;
+		}
+	}
+
+	&__list {
+		padding: 15px;
+		color: #333;
+	}
+
+	&__item {
+		padding-bottom: 10px;
+
+		&:first-child {
+			padding-top: 10px;
+		}
+	}
+
+	&:hover:not(.nst-is-expanded) {
+		color: #2958f8;
+	}
+
+	&:first-child {
+		border-top: 1px solid #333;
+	}
+
+	&.nst-is-expanded {
+		.accordion__name {
+			color: #333;
+		}
+
+		.accordion__name::before {
+			border-color: #333;
+			color: #333;
+			transform: translateY(-50%) rotate(45deg);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.header {
+	color: #fff;
+	background-color: #000;
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__link {
+		display: block;
+		max-width: 300px;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.nav {
+		text-transform: uppercase;
+	}
+
+	&__num-block {
+		display: block;
+	}
+}
