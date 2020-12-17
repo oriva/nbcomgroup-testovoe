@@ -26,6 +26,10 @@
 			transform: translateY(-50%);
 			transition: $duration-normal;
 		}
+
+		&_total {
+			padding-right: 70px;
+		}
 	}
 
 	&__list {

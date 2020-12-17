@@ -1,6 +1,7 @@
 .configurator {
 	flex: 0 0 75%;
 	margin-top: 80px;
+	margin-bottom: 80px;
 	border: 1px solid #333;
 	width: 75%;
 
@@ -21,5 +22,11 @@
 		&:first-child {
 			border-top: none;
 		}
+	}
+
+	&__btn-block {
+		padding-top: 10px;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }

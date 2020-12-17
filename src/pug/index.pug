@@ -7,6 +7,20 @@ main
 				#js-generate-service.configurator__body
 				.configurator__footer
 					.configurator__total-block
-						.text-with-line
-							span
-								| Тип устройства
+						.accordion__name.accordion__name_total
+							.text-with-line.justify-content-btw
+								span
+									| Тип устройства
+								span
+									| от 199 999 тыс.
+					.configurator__btn-block
+						.row
+							.col
+								button.btn.configurator__btn-send
+									| Отправить заявку
+							.col-auto
+								button.btn.btn_icon
+									include ../images/icons/phone.svg
+							.col-auto
+								button.btn.btn_icon
+									include ../images/icons/msg.svg

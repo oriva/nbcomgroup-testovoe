@@ -8,11 +8,15 @@
 
 .col {
 	flex: 1 0 0;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .col-auto {
 	flex: 0 0 auto;
 	width: auto;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 
 .row {
