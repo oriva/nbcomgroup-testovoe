@@ -29,8 +29,14 @@
 	}
 
 	&__list {
-		padding: 15px;
+		overflow: hidden;
+		padding: 0 15px 15px;
 		color: #333;
+		transition: height 0.25s ease;
+
+		&:not(.active) {
+			display: none;
+		}
 	}
 
 	&__item {
@@ -41,7 +47,7 @@
 		}
 	}
 
-	&:hover:not(.nst-is-expanded) {
+	&:hover:not(.show) {
 		color: #2958f8;
 	}
 
@@ -49,7 +55,7 @@
 		border-top: 1px solid #333;
 	}
 
-	&.nst-is-expanded {
+	&.show {
 		.accordion__name {
 			color: #333;
 		}
